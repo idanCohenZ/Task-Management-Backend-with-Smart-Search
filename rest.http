@@ -1,0 +1,52 @@
+###
+GET http://localhost:3005/tasks/6447e13e8d9a86dd1ab1c5ba
+
+
+###
+POST http://localhost:3005/addTask
+Content-Type: application/json
+
+{
+    "Title": "Work",
+      "Description":" do a cool assignment in internship",
+      "DueDate":"2023-04-25",
+      "Priority": "High",
+      "Status": "In Progress"
+}
+###
+POST http://localhost:3005/addTask
+Content-Type: application/json
+
+{
+    "Title": "sleep",
+      "Description":" sleep well tonight",
+      "DueDate":"2023-04-25",
+      "Priority": "Medium",
+      "Status": "Done"
+}
+###
+
+PATCH http://localhost:3005/changeTask/run
+Content-Type: application/json
+
+{
+    "Title": "run",
+      "Description":" do a 355 KM today",
+      "DueDate":"2025-12-09",
+      "Priority": "Low",
+      "Status": "Done"
+}
+
+
+
+
+###
+DELETE http://localhost:3005/tasks/delete/Work
+
+###
+GET http://localhost:3005/search/N
+
+###
+GET http://localhost:3005/search/smart/x
+
+
